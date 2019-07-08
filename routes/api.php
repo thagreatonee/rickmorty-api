@@ -21,7 +21,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 $api = app('Dingo\Api\Routing\Router');
 
 $api->version('v1', function ($api) {
-
     //show a list of episodes
     $api->get('episodes', 'App\Http\Controllers\EpisodeController@show');
     //add comment to an episode
